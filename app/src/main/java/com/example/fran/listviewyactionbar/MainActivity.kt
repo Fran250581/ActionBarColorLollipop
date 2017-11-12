@@ -13,6 +13,8 @@ class MainActivity : ListActivity()  {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        getActionBar().setDisplayShowHomeEnabled(true);
+
         //array adapter
         listAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, seisItems(items, 6))
     }
